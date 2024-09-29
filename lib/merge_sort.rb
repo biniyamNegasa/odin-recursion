@@ -3,7 +3,7 @@
 # Divide and call merge function
 def merge_sort(array)
   length = array.length
-  return array if length == 1
+  return array if length <= 1
 
   middle = length / 2
   first = merge_sort(array[...middle])
@@ -36,3 +36,4 @@ end
 
 # p merge_sort([3, 2, 1, 13, 8, 5, 0, 1])
 # p merge_sort([105, 79, 100, 110])
+# p merge_sort([])
